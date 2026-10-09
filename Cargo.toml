@@ -1,0 +1,14 @@
+[package]
+name = "shewville"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy = { version = "0.19", default-features = false, features = ["std", "bevy_log", "bevy_asset", "bevy_core_pipeline", "bevy_render", "bevy_window", "bevy_winit", "bevy_color", "mouse", "keyboard", "x11"] }
+bevy_egui = { version = "0.42", default-features = false, features = ["default_fonts", "render"] }
+tiny-skia = "0.11"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.dev]
+opt-level = 1
